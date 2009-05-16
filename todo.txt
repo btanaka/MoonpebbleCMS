@@ -1,0 +1,3 @@
+<!--
+	TODO integrate opw.template.default - stuff currently in display_body_content()
+-->

@@ -1,8 +1,7 @@
 <?php
 
 #
-# Moonstone Template Engine 
-# Brian Tanaka, brian@briantanaka.com
+# One Page Wonder
 #
 
 // errors
