@@ -15,7 +15,7 @@ body {
 }
 
 #wrapper {
-	width: 700px;
+	width: 500px;
 	margin: 0px auto;
 	text-align: left;
 	padding: 15px;
@@ -40,13 +40,14 @@ h1 {
     font: inherit;
     font-weight: bold;
     font-size: 2em;
+    margin: 1em 0em 0em 0em;
 }
 
 h2 {
     font: inherit;
     font-weight: bold;
     font-size: 1.5em;
-    margin: 1em 0em 0em 0em;
+    margin: 2em 0em 0em 0em;
 }
 
 h3 {
@@ -71,7 +72,14 @@ h3 {
     background-color: #ddd;
 }
 
+hr {
+    height:1px;
+    width:100%;
+    background:#afafaf;
+    margin: 2em 0em 0em 0em;
+}
 
-
-
-
+ul {
+    padding: 0px 0px 0px 3em;
+    margin-top: 1em;
+}
