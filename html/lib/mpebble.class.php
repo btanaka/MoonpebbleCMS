@@ -31,29 +31,6 @@ EOF;
     }
 
 
-    // deprecated. remove when ready
-    function display_body_content() {
-        print "<div id=\"headwrapper\">\n";
-        print "<div id=\"sitetitle\">" . SITETITLE . "</div>"; // set in mpebble.conf.php
-        print "<div id=\"tagline\">" . TAGLINE . "</div>"; // set in mpebble.conf.php
-        print "</div> <!-- headwrapper -->";
-        
-        print "<div id=\"wrapper\">\n";
-        print "<div class=\"content\">";
-        if ($handle = fopen(MPEBBLECONTENT, "r")) {
-            $content = "";
-            while (!feof($handle)) {
-                $buffer = fgets($handle, 4096);
-                $content = $content . $buffer;
-            }
-            fclose($handle);
-                $my_html = Markdown($content);
-                print $my_html;
-        } else {
-            print "<h1>Uh oh!</h1> The page you seek cannot be found.";
-        }
-    }
-
     function render_template() {
 	// consult config constants for particulars
 	// print the template, substituting along the way
