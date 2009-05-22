@@ -13,7 +13,6 @@ require("./lib/mpebble.class.php");
 $site = new Mpebble();
 $site->printheader();
 //$site->printmenu();
-$site->display_body_content(); 
-$site->printfooter();
-
-?>
+#$site->display_body_content(); 
+$site->render_template(); // this will replace display_body_content
+#$site->printfooter(); ?>

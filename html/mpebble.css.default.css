@@ -61,15 +61,15 @@ h3 {
     font-size: 2em;  
     background: #284907; 
     /* padding: 32px 12px 2px 32px; */
-    padding: 12px 0px 2px 0px; 
-    color: #ddd;
+    padding: 22px 0px 2px 0px; 
+    color: #fff;
     text-align: center;
 }
 
 #tagline {
     font-weight: normal;
-    font-style: italic;
-    font-size: 1em;    
+    /* font-style: italic; */
+    font-size: 0.8em;    
     /* padding: 2px 12px 2px 62px; */
     padding: 2px 0px 2px 0px; 
     background-color: #ddd;
