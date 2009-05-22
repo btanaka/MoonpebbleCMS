@@ -1,18 +1,16 @@
 <?php
 
 #
-# One Page Wonder
+# MoonpebbleCMS
 #
 
-// errors
-error_reporting(E_ALL); # Report all PHP errors
-//error_reporting(0); # Report no PHP errors
+error_reporting(E_ALL); # Report all PHP errors - test
+//error_reporting(0); # Report no PHP errors - production
 
 require("./lib/mpebble.class.php");
 
 $site = new Mpebble();
 $site->printheader();
-//$site->printmenu();
-#$site->display_body_content(); 
 $site->render_template(); // this will replace display_body_content
-#$site->printfooter(); ?>
+
+?>
