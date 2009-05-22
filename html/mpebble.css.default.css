@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: Arial, "MS Trebuchet", sans-serif;
-    font-size: 90%;
-    color: #333;
-    background: #fff;
-    margin: 0px 0px;
-    padding: 0px;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 90%;
+	color: #333;
+	background: #fff;
+	margin: 0px 0px;
+	padding: 0px;
 	text-align: center;
 }
 
@@ -24,9 +24,9 @@ body {
 
 #headwrapper {
 	width: 100%;
-    /* margin: 0px auto;*/
-    margin: 0px;
-    padding: 0em;
+	/* margin: 0px auto;*/
+	margin: 0px;
+	padding: 0em;
 	text-align: left;
 	background-color: #fff;
 }
@@ -60,16 +60,20 @@ h3 {
     font-weight: bold;
     font-size: 2em;  
     background: #284907; 
-    padding: 32px 12px 12px 12px; 
+    /* padding: 32px 12px 2px 32px; */
+    padding: 12px 0px 2px 0px; 
     color: #ddd;
+    text-align: center;
 }
 
 #tagline {
     font-weight: normal;
     font-style: italic;
     font-size: 1em;    
-    padding: 2px 12px 2px 12px; 
+    /* padding: 2px 12px 2px 62px; */
+    padding: 2px 0px 2px 0px; 
     background-color: #ddd;
+    text-align: center;
 }
 
 hr {
