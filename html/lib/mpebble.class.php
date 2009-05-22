@@ -68,10 +68,12 @@ EOF;
                     $replacements[1] = CSS;
                 $patterns[2] = '/<%TAGLINE%>/';
                     $replacements[2] = TAGLINE;
+                $patterns[3] = '/<%FOOTER%>/';
+                    $replacements[3] = FOOTER;
                 $newbuffer = preg_replace($patterns, $replacements, $buffer);
                 // if content, mardownify the content
                 if (preg_match("/<%CONTENT%>/", $buffer)) {
-                    if ($handle2 = fopen(MPEBBLECONTENT, "r")) {
+                    if ($handle2 = fopen(MPEBBLECONTENT, "r")) { 
                         $content = "";
                         while (!feof($handle2)) {
                             $buffer2 = fgets($handle2, 4096);
@@ -79,15 +81,15 @@ EOF;
                         }
                             $my_html = Markdown($content);
                             print $my_html;
-                    } 
+			fclose($handle2);
+                    } else {
+			print "<h1>Uh oh!</h1> The page you seek cannot be found.";
+		    }
                 } else { // this wasn't the content so print away
                     print $newbuffer;
                 }
-                //$content = $content . $buffer;
             }
-            //fclose($handle);
-            //    $my_html = Markdown($content);
-            //    print $my_html;
+            fclose($handle);
         } else {
             print "<h1>Uh oh!</h1> The page you seek cannot be found.";
         }
