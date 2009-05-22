@@ -4,11 +4,12 @@
 # Opw Template Engine Config
 #
 
-define('SITETITLE', 'One Page Wonder Websites');
-define('TAGLINE', 'Low Price, High Value Websites for Small Businesses');
-define('BASEPATH', '/Users/btanaka/stuffs/stuff.1/o/onepagewonders.d/html');
-define('CSS', './opw.css.default.css');
+define('SITETITLE', 'MoonpebbleCMS');
+define('TAGLINE', 'A tiny, lightweight, super cool CMS...');
+define('BASEPATH', '/Users/btanaka/stuffs/stuff.1/m/moonpebblecms.d/html');
+define('CSS', './mpebble.css.default.css');
 // $opwcontent = "user_files/opw.content";
-define('OPWCONTENT', './user_files/opw.content');
+define('MPEBBLECONTENT', './user_files/mpebble.content');
 
+# old tagline define('TAGLINE', 'Low Price, High Value Websites for Small Businesses'); 
 ?>

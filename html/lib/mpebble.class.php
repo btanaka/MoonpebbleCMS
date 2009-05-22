@@ -2,13 +2,13 @@
 
 error_reporting(E_ALL); # Report all PHP errors
 
-class Opw {
+class Mpebble {
 
     //var $basepath;
 
-    function Opw() {
+    function Mpebble() {
         include_once "markdown.php";
-        include_once "opw.conf.php"; // installation specific configurations
+        include_once "mpebble.conf.php"; // installation specific configurations
     }
 
 
@@ -22,7 +22,7 @@ class Opw {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>
 EOF;
-        print SITETITLE; // set in opw.conf.php
+        print SITETITLE; // set in mpebble.conf.php
         print <<<EOF
 </title>
     <link rel="stylesheet" href="
@@ -47,13 +47,13 @@ EOF;
 
     function display_body_content() {
         print "<div id=\"headwrapper\">\n";
-        print "<div id=\"sitetitle\">" . SITETITLE . "</div>"; // set in opw.conf.php
-        print "<div id=\"tagline\">" . TAGLINE . "</div>"; // set in opw.conf.php
+        print "<div id=\"sitetitle\">" . SITETITLE . "</div>"; // set in mpebble.conf.php
+        print "<div id=\"tagline\">" . TAGLINE . "</div>"; // set in mpebble.conf.php
         print "</div> <!-- headwrapper -->";
         
         print "<div id=\"wrapper\">\n";
         print "<div class=\"content\">";
-        if ($handle = fopen(OPWCONTENT, "r")) {
+        if ($handle = fopen(MPEBBLECONTENT, "r")) {
             $content = "";
             while (!feof($handle)) {
                 $buffer = fgets($handle, 4096);
