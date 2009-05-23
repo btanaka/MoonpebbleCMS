@@ -12,8 +12,6 @@ define('BASEPATH', '/Users/btanaka/stuffs/stuff.1/m/moonpebblecms.d/html');
 define('CSS', './templates/superplain/superplain.css');
 define('MPEBBLETEMPLATE', './templates/default/default.html');
 define('MPEBBLECONTENT', './user_files/mpebble.content.mdwn');
-// $opwcontent = "user_files/opw.content";
 
-# old tagline define('TAGLINE', 'Low Price, High Value Websites for Small Businesses'); 
 ?>
 
