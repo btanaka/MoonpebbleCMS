@@ -4,31 +4,13 @@ error_reporting(E_ALL); # Report all PHP errors
 
 class Mpebble {
 
-    //var $basepath;
+
 
     function Mpebble() {
         include_once "markdown.php";
         include_once "mpebble.conf.php"; // installation specific configurations
     }
 
-
-    function printheader() {
-        print <<<EOF
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
-EOF;
-    }
-
-
-
-    function printfooter() {
-        print <<<EOF
-</div> <!-- wrapper -->
-</body>
-</html>
-EOF;
-    }
 
 
     function render_template() {
@@ -73,8 +55,8 @@ EOF;
         } else {
             print "<h1>Uh oh!</h1> The page you seek cannot be found.";
         }
-
     }
+
 
 } #class
 

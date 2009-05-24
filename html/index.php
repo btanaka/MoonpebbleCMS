@@ -10,7 +10,6 @@ error_reporting(E_ALL); # Report all PHP errors - test
 require("./lib/mpebble.class.php");
 
 $site = new Mpebble();
-$site->printheader();
 $site->render_template(); // this will replace display_body_content
 
 ?>
