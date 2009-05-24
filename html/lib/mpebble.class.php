@@ -34,7 +34,10 @@ EOF;
     function render_template() {
 	// consult config constants for particulars
 	// print the template, substituting along the way
-        if ($handle = fopen(MPEBBLETEMPLATE, "r")) {
+	$themepath = "./themes/" . MPEBBLETHEME . "/";
+	$themetemplate = "$themepath" . MPEBBLETHEME .  ".html";
+	$themecss = "$themepath" . MPEBBLETHEME .  ".css";
+        if ($handle = fopen($themetemplate, "r")) {
             $content = "";
             while (!feof($handle)) {
                 $buffer = fgets($handle, 4096);
@@ -42,7 +45,7 @@ EOF;
                 $patterns[0] = '/<%SITETITLE%>/';
                     $replacements[0] = SITETITLE;
                 $patterns[1] = '/<%CSS%>/';
-                    $replacements[1] = CSS;
+                    $replacements[1] = $themecss;
                 $patterns[2] = '/<%TAGLINE%>/';
                     $replacements[2] = TAGLINE;
                 $patterns[3] = '/<%FOOTER%>/';
@@ -74,3 +77,4 @@ EOF;
     }
 
 } #class
+
