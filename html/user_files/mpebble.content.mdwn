@@ -1,10 +1,8 @@
-<div style="border: 1px solid #afafaf; padding: 1em;
-background: #efe; font-size: 1.25em; font-weight: normal;
-line-height: 1.5em; margin: 32px 0px 0px 0px;">
-MoonpebbleCMS is tiny, lightweight, super cool CMS...
-</div>
+<div class="calloutbox">MoonpebbleCMS
+is an ultra-lightweight, super cool content management system.</div>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
+__Lorem ipsum dolor sit amet, consectetuer adipiscing elit.__
+Praesent
 tincidunt, lacus sit amet nonummy cursus, nibh pede semper sapien,
 at mollis nibh neque vitae metus. Sed viverra dui vel sapien. Cum
 sociis natoque penatibus et magnis dis parturient montes, nascetur
