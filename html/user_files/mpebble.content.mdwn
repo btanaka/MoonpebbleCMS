@@ -1,14 +1,28 @@
 <div class="calloutbox">MoonpebbleCMS
 is an ultra-lightweight, super cool content management system.</div>
 
-__Lorem ipsum dolor sit amet, consectetuer adipiscing elit.__
-Praesent
-tincidunt, lacus sit amet nonummy cursus, nibh pede semper sapien,
-at mollis nibh neque vitae metus. Sed viverra dui vel sapien. Cum
-sociis natoque penatibus et magnis dis parturient montes, nascetur
-ridiculus mus. Vivamus condimentum eleifend lectus. Praesent rhoncus.
-Integer sed leo a odio ultrices ultricies.
+What is MoonpebbleCMS?
+---------------------
+Some websites don't require a full-blown, large-scale
+Content Management System (CMS) such as Drupal or Plone.
+Rather, all they really need is a lightweight CMS that 
+enables site owner to edit their pages, and really, not a
+whole lot more. Enter MoonpebbleCMS.
 
+MoonpebbleCMS is not just lightweight; it's downright ultra-lightweight.
+There are no user accounts, no administrative interfaces, and no
+databases.  MoonpebbleCMS simply parses Markdown and presents the
+resulting HTML, beautifully wrapped in a MoonpebbleCMS theme of
+your choice (or your custom design).
+
+That means consultants can install and configure MoonpebbleCMS in
+no time flat and site owners can edit their pages any time they
+want with the text editor of their choice on their own computer.
+
+Boom. Done. Super easy.
+
+How Does it Work?
+---------------------
 Phasellus convallis erat et tellus. Aenean ac odio ac dolor semper
 molestie. Nunc volutpat, massa sit amet condimentum sagittis, enim
 enim blandit lectus, quis fringilla dolor nibh molestie diam. Integer
@@ -16,6 +30,8 @@ ut nisi vitae pede feugiat semper. Phasellus sollicitudin, lectus
 vitae lobortis volutpat, risus nunc tempor elit, eu accumsan sapien
 orci vel augue. Aliquam et augue.
 
+How Do I Install It?
+---------------------
 Sed lectus. Pellentesque at elit a ipsum scelerisque ultrices.
 Vivamus porta sapien ullamcorper urna. Morbi pulvinar, turpis sed
 vulputate pharetra, nibh lacus accumsan mauris, vitae varius leo
@@ -23,4 +39,36 @@ erat a lectus. Fusce varius metus quis enim.  Pellentesque ullamcorper
 aliquam ipsum. Aenean eget diam sed ante ultricies cursus. Morbi
 facilisis. Pellentesque magna nibh, sollicitudin sit amet, laoreet
 vel, lacinia vehicula, tellus.
+
+How Do I Configure It?
+---------------------
+Sed lectus. Pellentesque at elit a ipsum scelerisque ultrices.
+Vivamus porta sapien ullamcorper urna. Morbi pulvinar, turpis sed
+vulputate pharetra, nibh lacus accumsan mauris, vitae varius leo
+erat a lectus. Fusce varius metus quis enim.  Pellentesque ullamcorper
+aliquam ipsum. Aenean eget diam sed ante ultricies cursus. Morbi
+facilisis. Pellentesque magna nibh, sollicitudin sit amet, laoreet
+vel, lacinia vehicula, tellus.
+
+How Are Pages Updated?
+---------------------
+Sed lectus. Pellentesque at elit a ipsum scelerisque ultrices.
+Vivamus porta sapien ullamcorper urna. Morbi pulvinar, turpis sed
+vulputate pharetra, nibh lacus accumsan mauris, vitae varius leo
+erat a lectus. Fusce varius metus quis enim.  Pellentesque ullamcorper
+aliquam ipsum. Aenean eget diam sed ante ultricies cursus. Morbi
+facilisis. Pellentesque magna nibh, sollicitudin sit amet, laoreet
+vel, lacinia vehicula, tellus.
+
+How Can I Contribute to the Project?
+---------------------
+Sed lectus. Pellentesque at elit a ipsum scelerisque ultrices.
+Vivamus porta sapien ullamcorper urna. Morbi pulvinar, turpis sed
+vulputate pharetra, nibh lacus accumsan mauris, vitae varius leo
+erat a lectus. Fusce varius metus quis enim.  Pellentesque ullamcorper
+aliquam ipsum. Aenean eget diam sed ante ultricies cursus. Morbi
+facilisis. Pellentesque magna nibh, sollicitudin sit amet, laoreet
+vel, lacinia vehicula, tellus.
+
+
 

@@ -46,7 +46,7 @@ h1 {
 h2 {
     font: inherit;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 2em 0em 0em 0em;
 }
 
@@ -101,7 +101,7 @@ ul {
     background: #efefef;
     font-size: 1.25em;
     font-weight: normal;
-    line-height: 1.5jm;
-    margin: 32px 0px 0px 0px;
+    line-height: 1.5em;
+    margin: 2px 0px 0px 0px;
 }
 
