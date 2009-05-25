@@ -1,0 +1,109 @@
+* {
+    border: 0px solid #cfcfcf;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 90%;
+	color: #333;
+	background: #fff;
+	margin: 0px 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#wrapper {
+	width: 500px;
+	margin: 0px auto;
+	text-align: left;
+	padding: 15px;
+	background-color: #fff;
+}
+
+#headwrapper {
+	width: 100%;
+	/* margin: 0px auto;*/
+	margin: 0px;
+	padding: 0em;
+	text-align: left;
+	background-color: #fff;
+}
+
+p {
+    margin: 1em 0em 0em 0em;
+    line-height: 1.5em;
+}
+
+h1 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1em 0em 0em 0em;
+}
+
+h2 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2em 0em 0em 0em;
+}
+
+h3 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#sitetitle {
+    font-weight: bold;
+    font-size: 2em;  
+    background: #fff; 
+    /* padding: 32px 12px 2px 32px; */
+    padding: 22px 0px 2px 0px; 
+    color: #333;
+    text-align: center;
+}
+
+#tagline {
+    font-weight: normal;
+    /* font-style: italic; */
+    font-size: 0.8em;    
+    /* padding: 2px 12px 2px 62px; */
+    padding: 2px 0px 2px 0px; 
+    background-color: #fff;
+    text-align: center;
+}
+
+hr {
+    height:1px;
+    width:100%;
+    background:#afafaf;
+    margin: 2em 0em 0em 0em;
+}
+
+ul {
+    padding: 0px 0px 0px 3em;
+    margin-top: 1em;
+}
+
+#footer {
+    border-top: 1px solid #afafaf;
+    padding: 6px 0px 20px 0px;
+    margin: 6px 0px 20px 0px;
+    font-size: 0.8em;    
+}
+
+
+.giantheadline {
+    color:#222222;
+    font-family:georgia,times,Times New Roman,times-roman,georgia,serif;
+    font-size:77px;
+    font-weight:normal;
+    letter-spacing:-3px;
+    line-height:64px;
+    margin:0 0 0 12px;
+    padding:0;
+    text-transform:uppercase;
+}

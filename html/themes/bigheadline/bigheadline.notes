@@ -1,0 +1,12 @@
+.giantheadline {
+    color:#222222;
+    font-family:georgia,times,Times New Roman,times-roman,georgia,serif;
+    font-size:77px;
+    font-weight:normal;
+    letter-spacing:-3px;
+    line-height:64px;
+    margin:0 0 0 12px;
+    padding:0;
+    text-transform:uppercase;
+}
+
