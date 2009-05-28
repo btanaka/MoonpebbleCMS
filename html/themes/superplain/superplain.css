@@ -12,6 +12,7 @@ body {
 	margin: 0px 0px;
 	padding: 0px;
 	text-align: center;
+	background-color: #fff;
 }
 
 #wrapper {
@@ -19,7 +20,6 @@ body {
 	margin: 0px auto;
 	text-align: left;
 	padding: 15px;
-	background-color: #fff;
 }
 
 #headwrapper {
@@ -28,7 +28,7 @@ body {
 	margin: 0px;
 	padding: 0em;
 	text-align: left;
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 
 p {
@@ -48,6 +48,8 @@ h2 {
     font-weight: bold;
     font-size: 1.25em;
     margin: 2em 0em 0em 0em;
+	border-bottom: 1px solid #afafaf;
+	color: #555;
 }
 
 h3 {
@@ -58,11 +60,11 @@ h3 {
 
 #sitetitle {
     font-weight: bold;
-    font-size: 2em;  
-    background: #fff; 
+    font-size: 2.5em;  
+    /* background: #fff; */ 
     /* padding: 32px 12px 2px 32px; */
-    padding: 22px 0px 2px 0px; 
-    color: #333;
+    padding: 72px 0px 2px 0px; 
+    color: #b00;
     text-align: center;
 }
 
@@ -71,8 +73,8 @@ h3 {
     /* font-style: italic; */
     font-size: 0.8em;    
     /* padding: 2px 12px 2px 62px; */
-    padding: 2px 0px 2px 0px; 
-    background-color: #fff;
+    padding: 2px 0px 42px 0px; 
+    /* background-color: #fff; */
     text-align: center;
 }
 
@@ -91,7 +93,7 @@ ul {
 #footer {
     border-top: 1px solid #afafaf;
     padding: 6px 0px 20px 0px;
-    margin: 6px 0px 20px 0px;
+    margin: 26px 0px 20px 0px;
     font-size: 0.8em;    
 }
 
@@ -103,5 +105,7 @@ ul {
     font-weight: normal;
     line-height: 1.5em;
     margin: 2px 0px 0px 0px;
+	text-align: center;
+	color: #444;
 }
 

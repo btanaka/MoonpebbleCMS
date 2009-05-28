@@ -6,7 +6,7 @@
 
 define('SITETITLE', 'MoonpebbleCMS');
 define('TAGLINE', 'A tiny, lightweight, super cool CMS...');
-define('FOOTER', 'Footers are good eating!');
+define('FOOTER', 'Powered by MoonpebbleCMS - Theme: Superplain');
 define('BASEPATH', '/Users/btanaka/stuffs/stuff.1/m/moonpebblecms.d/html');
 define('MPEBBLECONTENT', './user_files/mpebble.content.mdwn');
 
