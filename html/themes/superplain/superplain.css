@@ -107,5 +107,7 @@ ul {
     margin: 2px 0px 0px 0px;
 	text-align: center;
 	color: #444;
+	-moz-border-radius: 3em 1em;
+	-webkit-border-radius: 3em 1em;
 }
 
