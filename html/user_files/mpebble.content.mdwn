@@ -23,6 +23,8 @@ Boom. Done. Super easy.
 
 How Does it Work?
 ---------------------
+Git clone the project (or grab the latest version here).
+
 Phasellus convallis erat et tellus. Aenean ac odio ac dolor semper
 molestie. Nunc volutpat, massa sit amet condimentum sagittis, enim
 enim blandit lectus, quis fringilla dolor nibh molestie diam. Integer
