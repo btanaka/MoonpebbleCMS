@@ -1,0 +1,111 @@
+* {
+    border: 0px solid #cfcfcf;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 90%;
+	color: #333;
+	background: #fff;
+	margin: 0px 0px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	background-color: #fff;
+}
+
+#wrapper {
+	width: 648px;
+	margin: 0px auto;
+	text-align: left;
+	padding: 15px;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+}
+
+#headwrapper {
+	width: 100%;
+	/* margin: 0px auto;*/
+	margin: 0px;
+	padding: 0em;
+	text-align: left;
+	/* background-color: #fff; */
+}
+
+p {
+    margin: 1em 0em 0em 0em;
+    line-height: 1.5em;
+}
+
+h1 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1em 0em 0em 0em;
+}
+
+h2 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 2em 0em 0em 0em;
+	border-bottom: 11px solid #cfffcf;
+	color: #03971b;
+}
+
+h3 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#sitetitle {
+    font-weight: bold;
+    font-size: 2.5em;  
+    /* background: #fff; */ 
+    /* padding: 32px 12px 2px 32px; */
+    padding: 72px 0px 2px 0px; 
+    color: #b00;
+    text-align: center;
+}
+
+#tagline {
+    font-weight: normal;
+    /* font-style: italic; */
+    font-size: 0.8em;    
+    /* padding: 2px 12px 2px 62px; */
+    padding: 2px 0px 42px 0px; 
+    /* background-color: #fff; */
+    text-align: center;
+}
+
+hr {
+    height:1px;
+    width:100%;
+    background:#afafaf;
+    margin: 2em 0em 0em 0em;
+}
+
+ul {
+    padding: 0px 0px 0px 3em;
+    margin-top: 1em;
+}
+
+#footer {
+    border-top: 1px solid #afafaf;
+    padding: 6px 0px 20px 0px;
+    margin: 26px 0px 20px 0px;
+    font-size: 0.8em;    
+}
+
+.calloutbox {
+    padding: 1em;
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 2px 0px 0px 0px;
+	text-align: center;
+	color: #444;
+}
+
