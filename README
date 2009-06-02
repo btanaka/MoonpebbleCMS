@@ -1,0 +1,115 @@
+What is MoonpebbleCMS?
+----------------------
+
+Let's face it. Some websites don't really need a full-blown,
+large-scale Content Management System (CMS) such as Drupal or Plone.
+Rather, all they really need is a lightweight CMS that enables site
+owner to edit their pages, and really, not a whole lot more. Enter
+MoonpebbleCMS.
+
+MoonpebbleCMS is not just lightweight; it's downright ultra-lightweight.
+There are no user accounts, no administrative interfaces, and no
+databases. MoonpebbleCMS simply parses Markdown and presents the
+resulting HTML, beautifully wrapped in a MoonpebbleCMS theme of
+your choice (or your custom design).
+
+That means consultants can install and configure MoonpebbleCMS in
+no time flat, and site owners can edit their pages any time they
+want with the text editor of their choice on their own computer.
+
+Boom. Done. Super easy.
+
+
+How Does it Work?
+-----------------
+
+MoonpebbleCMS is written in PHP because every (or nearly every) web
+hosting company supports PHP. (Other languages may be better, but
+if your client is using a hosting company that doesn't support that
+"better" language, then you have a problem, and MoonpebbleCMS is
+all about wrestling with the fewest possible problems.)
+
+Installation is as simple as placing the PHP scripts and a few
+directories. A simple git clone will get the job done in about a
+nanosecond, or--if git isn't available--you can simply install the
+project via tar, scp, FTP, or what-have-you.
+
+Once everything is in place, all that's left to do is tweaking the
+configuration file to taste. And that's it.
+
+Plain ole text files (in Markdown) placed in the user_files directory
+are automatically used as the site's content. (Note: At the time
+of this writing, MoonpebbleCMS supports only one page. Yup. One
+page. I told you it was simple. However, the next version will
+support multiple pages with automatic menus. MoonpebbleCMS will
+simply build the site out of all the pages it finds in user_files.)
+
+Once everything's in place, the site owner can edit the text files
+on her own computer using any text editor (eg. TextEdit, Notepad,
+etc) and push them back to the server via FTP (or scp, or WebDAV,
+or what-have-you.).
+
+
+How Do I Install It?
+--------------------
+
+Step 1. Get it! - Instructions for getting the project go here.
+
+Step 2. Configure it! - Configuration instructions go here.
+
+Step 3. There's no step three!
+
+
+How Do I Configure It?
+----------------------
+
+Set the constants in mpebble.conf.php. They're very straightforward.
+
+The only thing that's even slightly complex is the theme setting.
+The name you set in MPEBBLETHEME must match the name of that theme's
+directory in the themes directory. (See How do I Create a Theme
+section below.)
+
+
+How Are Pages Updated?
+----------------------
+
+The site owner grabs the current version of the page via FTP. (I
+say FTP, but it could be via WebDAV or scp or some other method.)
+She edits it. It's just Markdown. Very simple. Then, when she's
+satisfied, she uploads it back to the server in the user_files
+directory. That's it.
+
+
+How do I Create a Theme?
+------------------------
+
+MoonpebbleCMS themes are very simple. (See a pattern developing here?)
+
+In the themes directory, create a subdirectory named the name of
+your theme. Inside that subdirectory, place your css and html, also
+named the name of your theme. For example, if your theme is foobar:
+
+themes/foobar/foobar.css
+themes/foobar/foobar.html
+
+In foobar.html, you can replace any of the constants found in
+mpebble.conf.php by surrounding it with <% %>. For example:
+<%SITETITLE%>
+
+<%CONTENT%> will expand to the html-ified version of the user's
+Markdown file.
+
+To get a good grasp on how all this works, take a look at one of
+the themes that ships with MoonpebbleCMS.
+
+
+How Can I Contribute to the Project?
+------------------------------------
+
+If you're interested in contributing code or themes, please contact
+Brian (brian at briantanaka dot com). Thanks!
+
+
+Mon Jun  1 17:26:36 PDT 2009
+
