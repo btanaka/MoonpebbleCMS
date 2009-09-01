@@ -38,6 +38,8 @@ class Mpebble {
             $content = "";
             while (!feof($handle)) {
                 $buffer = fgets($handle, 4096);
+                $noprint = 0;
+                
                 // substitute here
                 $patterns[0] = '/<%SITETITLE%>/';
                     $replacements[0] = SITETITLE;
@@ -48,9 +50,9 @@ class Mpebble {
                 $patterns[3] = '/<%FOOTER%>/';
                     $replacements[3] = FOOTER;
                 $newbuffer = preg_replace($patterns, $replacements, $buffer);
+                
                 // if content, mardownify the content
                 if (preg_match("/<%CONTENT%>/", $buffer)) {
-                    // if ($handle2 = fopen(MPEBBLECONTENT, "r")) { 
                     if ($handle2 = fopen($current_content, "r")) { 
                         $content = "";
                         while (!feof($handle2)) {
@@ -59,11 +61,32 @@ class Mpebble {
                         }
                             $my_html = Markdown($content);
                             print $my_html;
-			fclose($handle2);
+                			fclose($handle2);
+                			$noprint++;
                     } else {
-			print "<h1>Uh oh!</h1> The page you seek cannot be found.";
-		    }
-                } else { // this wasn't the content so print away
+            			print "<h1>Uh oh!</h1> The page you seek cannot be found.";
+        		    }
+                }
+                
+                // if menu, include the menu
+                if (preg_match("/<%MENU%>/", $buffer)) {
+                    if ($menu_handle = fopen(MENU, "r")) { 
+                        $content = "";
+                        while (!feof($menu_handle)) {
+                            $buffer3 = fgets($menu_handle, 4096);
+                            $content = $content . $buffer3;
+                        }
+                            $my_html = Markdown($content);
+                            print $my_html;
+                			fclose($menu_handle);
+                			$noprint++;
+                    } else {
+            			print "<h1>Uh oh!</h1> The page you seek cannot be found.";
+        		    }
+                }
+                
+                # substitution is done. print the post-replacement buffer.
+                if ( $noprint < 1) {
                     print $newbuffer;
                 }
             }

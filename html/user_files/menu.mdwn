@@ -1,0 +1,5 @@
+<div id="menu" style="padding-bottom: 1em; text-align: center; font-size: 0.80em;">
+Menu: 
+<a href="/moonpebble/">Home</a> | 
+<a href="/moonpebble/index.php?p=page_two">Page Two</a> 
+</div>
