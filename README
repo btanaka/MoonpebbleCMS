@@ -38,11 +38,9 @@ Once everything is in place, all that's left to do is tweaking the
 configuration file to taste. And that's it.
 
 Plain ole text files (in Markdown) placed in the user_files directory
-are automatically used as the site's content. (Note: At the time
-of this writing, MoonpebbleCMS supports only one page. Yup. One
-page. I told you it was simple. However, the next version will
-support multiple pages with automatic menus. MoonpebbleCMS will
-simply build the site out of all the pages it finds in user_files.)
+are automatically used as the site's content.
+You can have as many pages as you like and link them together
+with the MoonpebbleCMS menu configuration.
 
 Once everything's in place, the site owner can edit the text files
 on her own computer using any text editor (eg. TextEdit, Notepad,
