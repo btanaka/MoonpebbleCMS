@@ -10,6 +10,7 @@ error_reporting(E_ALL); # Report all PHP errors - test
 require("./lib/mpebble.class.php");
 
 $site = new Mpebble();
-$site->render_template();
+$p = ( isset($_GET['p'] ) ) ? $_GET['p'] : "NOTSET";
+$site->render_template($p);
 
 ?>

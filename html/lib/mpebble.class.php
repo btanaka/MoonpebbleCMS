@@ -13,12 +13,27 @@ class Mpebble {
 
 
 
-    function render_template() {
-	// consult config constants for particulars
-	// print the template, substituting along the way
-	$themepath = "./themes/" . MPEBBLETHEME . "/";
-	$themetemplate = "$themepath" . MPEBBLETHEME .  ".html";
-	$themecss = "$themepath" . MPEBBLETHEME .  ".css";
+    function render_template($p) {
+    	// consult config constants for particulars
+    	// print the template, substituting along the way
+	
+    	$themepath = "./themes/" . MPEBBLETHEME . "/";
+    	$themetemplate = "$themepath" . MPEBBLETHEME .  ".html";
+    	$themecss = "$themepath" . MPEBBLETHEME .  ".css";
+	
+    	// if p corresponds EXACTLY to a page in MPEBBLECONTENTPATH, then
+    	// set current_content variable
+    	if ( $p == "NOTSET") {
+            $current_content = MPEBBLECONTENTPATH . "mpebble.content.mdwn";
+        } else {
+        	$requested_content = MPEBBLECONTENTPATH . "$p" . ".mdwn";
+            if (file_exists($requested_content)) {
+                $current_content = $requested_content;
+            } else {
+                $current_content = "bad_input";
+            }
+        }
+	
         if ($handle = fopen($themetemplate, "r")) {
             $content = "";
             while (!feof($handle)) {
@@ -35,7 +50,8 @@ class Mpebble {
                 $newbuffer = preg_replace($patterns, $replacements, $buffer);
                 // if content, mardownify the content
                 if (preg_match("/<%CONTENT%>/", $buffer)) {
-                    if ($handle2 = fopen(MPEBBLECONTENT, "r")) { 
+                    // if ($handle2 = fopen(MPEBBLECONTENT, "r")) { 
+                    if ($handle2 = fopen($current_content, "r")) { 
                         $content = "";
                         while (!feof($handle2)) {
                             $buffer2 = fgets($handle2, 4096);

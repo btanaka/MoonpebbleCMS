@@ -1,3 +1,9 @@
+<!-- TODO: this needs to go somewhere universal -->
+<div id="menu" style="padding-bottom: 1em; text-align: center; font-size: 0.80em;">
+<a href="/moonpebble/">Home</a> | 
+<a href="/moonpebble/index.php?p=page_two">Page Two</a> 
+</div>
+
 <div class="calloutbox">MoonpebbleCMS
 makes setting up a very simple, user-editable
 website mind-bendingly easy.
