@@ -4,7 +4,7 @@ error_reporting(E_ALL); # Report all PHP errors
 
 class Mpebble {
 
-
+    public $error_notfound = "<h1>Uh oh!</h1> The page you seek cannot be found.";
 
     function Mpebble() {
         include_once "markdown.php";
@@ -17,7 +17,7 @@ class Mpebble {
     	// consult config constants for particulars
     	// print the template, substituting along the way
 	
-    	$themepath = "./themes/" . MPEBBLETHEME . "/";
+    	$themepath = "./mpebble_themes/" . MPEBBLETHEME . "/";
     	$themetemplate = "$themepath" . MPEBBLETHEME .  ".html";
     	$themecss = "$themepath" . MPEBBLETHEME .  ".css";
 	
@@ -64,7 +64,7 @@ class Mpebble {
                 			fclose($handle2);
                 			$noprint++;
                     } else {
-            			print "<h1>Uh oh!</h1> The page you seek cannot be found.";
+                        print "$this->error_notfound";
         		    }
                 }
                 
@@ -81,7 +81,7 @@ class Mpebble {
                 			fclose($menu_handle);
                 			$noprint++;
                     } else {
-            			print "<h1>Uh oh!</h1> The page you seek cannot be found.";
+                        print "$this->error_notfound";
         		    }
                 }
                 
@@ -92,7 +92,7 @@ class Mpebble {
             }
             fclose($handle);
         } else {
-            print "<h1>Uh oh!</h1> The page you seek cannot be found.";
+            print "$this->error_notfound";
         }
     }
 
