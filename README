@@ -48,6 +48,19 @@ etc) and push them back to the server via FTP (or scp, or WebDAV,
 or what-have-you.).
 
 
+Why Don't You Include Wiki Style Linking?
+-----------------------------------------
+
+Funny you should mention that. MoonpebbleCMS now supports wiki style
+linking. That means you can enclose any string with double square
+brackets, and MoonpebbleCMS will automatically make that string a
+link to the page of the same name. For example [[foo]] will
+automatically become a link to your page called foo. Or another
+example: "Let's all turn to page_two." (I did that by typing
+[[page_two]] instead of the regular Markdown-style link, which is
+a bit longer.)
+
+
 How Do I Install It?
 --------------------
 

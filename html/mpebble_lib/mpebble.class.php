@@ -60,7 +60,16 @@ class Mpebble {
                             $content = $content . $buffer2;
                         }
                             $my_html = Markdown($content);
-                            print $my_html;
+                            // substitute wiki style links
+                            $patterns[0] = '/\[\[.+\]\]/';
+                            $linkname = preg_match('/\[\[(.+)\]\]/', $my_html, $matches);
+                            $replacements[0] = "<a href=\"index.php?p=" .
+                                $matches[1] .
+                                "\">" .
+                                $matches[1] .
+                                "</a>";
+                            $new_my_html = preg_replace($patterns, $replacements, $my_html);
+                            print $new_my_html;
                 			fclose($handle2);
                 			$noprint++;
                     } else {
