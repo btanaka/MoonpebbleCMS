@@ -60,10 +60,12 @@ class Mpebble {
                             $content = $content . $buffer2;
                         }
                             $my_html = Markdown($content);
+
                             // substitute wiki style links
-                            $patterns[0] = '/\[\[.+\]\]/';
+                            $patterns[0] = '/\[\[.+\]\]/'; // eg [[foo]]
                             $linkname = preg_match('/\[\[(.+)\]\]/', $my_html, $matches);
-                            $replacements[0] = "<a href=\"index.php?p=" .
+                            $replacements[0] = "<a href=\"" .
+                                WIKI_PREFIX .
                                 $matches[1] .
                                 "\">" .
                                 $matches[1] .

@@ -59,6 +59,7 @@ automatically become a link to your page called foo. Or another
 example: "Let's all turn to page_two." (I did that by typing
 [[page_two]] instead of the regular Markdown-style link, which is
 a bit longer.)
+See also, the WIKI_PREFIX configuration item.
 
 
 How Do I Install It?
